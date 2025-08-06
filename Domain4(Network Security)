@@ -1,1 +1,84 @@
+Domain 4: Network Security          08/03/2025
+
+Networking: What is Networking?
+
+A network is when two or more computers are linked together to share data, resources, or services.
+This can include printers, internet, files, or communication tools.
+---------------------------------------------------------------------------------------------------
+LAN vs WAN:
+- LAN (Local Area Network): Covers a small area (like one room, floor, or building)
+- WAN (Wide Area Network): Connects distant networks over large areas (like cities or countries)
+----------------------------------------------------------------------------------------------------
+Key Network Devices:
+_Hubs_
+- Basic device that connects multiple devices
+- Sends data to all ports (no intelligence).
+- Rarely used in modern business networks.
+
+_Switches_
+- Smarter than hubs
+- Know the MAC addresses if connected devices
+- Send data only to the specific device (more efficient).
+- Can be used to create VLANs
+
+_Routers_
+- Connects multiple networks together (LAN to WAN)
+- Route traffic using IP addresses
+- Can be wired or wireless
+- Choose the most efficent path for data
+
+_Firewalls_
+- Security device that filters traffic
+- Blocks or allows traffic based on rules (Acess Control Lists)
+- Used between internal neyworks and the internet, or between internal segments
+-----------------------------------------------------------------------------------------
+Common Network Components:
+_Server_
+- A computer that provides resources or services (ex, web server, mail server).
+- Servers are usally hardened (secured more than workstations)
+- Serve multiple clients over the network
+
+_Endpoints_
+- Any device that connects to a network
+- Examples: Laptops, desktops, smartphones, tablets.
+- One side of a network communication (client or server)
+-----------------------------------------------------------------------------------------
+Standards:
+
+_Ethernet_
+- Standard for wired networking
+- Defines how data is formatted and transmitted over cables 
+- Makes sure devices speak the same language on a wired network
+------------------------------------------------------------------------------------------
+Networking at a Glance:
+
+_Small Business Network_
+- Router, firewall, and network switch are separate devices
+- All devices (workstations, servers, printers) connect through a central switch
+- A firewall is placed between the switch and the internet to control traffic
+
+_Home Network_
+- Often uses a single combined device (modern + router + Wi-Fi access point).
+- Connects multiple devices like phones, laptops, tablets, and desktops
+- Simpler setup compared to a business network.
+---------------------------------------------------------------------------------------
+What is WiFi?
+WiFi is a wireles networking technology that allows devices to connect to a network without physical cables. It's commonly used in homes and businesses
+due to easy setup and low cost. Devices can move freely within range of wireless access points, making networking more flexible. However, WiFi introduces new security risks.
+Unlike netwroks that require physical access, attackers can attempt to breach wireless netwrokrs remotely if within signal range. As WiFi standards evolve, each 
+version becomes faster, but also requires updated security practices to stay protected
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
