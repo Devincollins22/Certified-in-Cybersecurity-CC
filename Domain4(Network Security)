@@ -68,6 +68,15 @@ due to easy setup and low cost. Devices can move freely within range of wireless
 Unlike netwroks that require physical access, attackers can attempt to breach wireless netwrokrs remotely if within signal range. As WiFi standards evolve, each 
 version becomes faster, but also requires updated security practices to stay protected
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsegmentation:
+
+Microsegementation is a logical approach to isolating systems, users, or applications within a network using software-defined rules.
+It controls how individual entities can communicate, enforcing security at a fine-grained level.\
+
+_Ket Features_
+-  Granular Access Rules
+      - Control communication per device, user IP, port, time, or service      
+
 
 
 
