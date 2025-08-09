@@ -188,8 +188,78 @@ In high-availability setups:
       - Redundant generators
       - Different fuel types for extra resilience.
 ---------------------------------------------------------------------------------------------------------------------------------=
+## Ports & Protocols (Applications/Services)
 
+### Physical vs Logical Ports
+- **Physical Port**: Actual hardware connection point (Ethernet jack, fiber port).
+- **Logical Port**: Software-based "address number" used to send data to the right application.
 
+### Port Ranges
+1. **Well-Known Ports (0–1023)**
+   - Standardized, core protocols.
+   - Examples: 80 (HTTP), 443 (HTTPS), 25 (SMTP), 53 (DNS).
+2. **Registered Ports (1024–49151)**
+   - Vendor-specific applications, registered with IANA.
+   - Examples: 1433/1434 (Microsoft SQL Server), 1812 (RADIUS).
+3. **Dynamic/Private Ports (49152–65535)**
+   - Temporary session ports, assigned and released after use.
 
+### Key Points
+- A single IP can run multiple services on different ports.
+- Always choose secure protocols (HTTPS > HTTP, SFTP > FTP).
+----------------------------------------------------------------------------------------------------------------------------
+# Cloud Computing Service Models
 
+## SaaS (Software as a Service)
+- Provider handles everything (hardware, OS, app)
+- User only manages their data
+- Examples: Gmail, Dropbox, Salesforce
+
+## PaaS (Platform as a Service)
+- Provider manages hardware, OS, middleware
+- User manages apps and data
+- Examples: Google App Engine, AWS Elastic Beanstalk
+
+## IaaS (Infrastructure as a Service)
+- Provider manages physical hardware
+- User manages OS, apps, and data
+- Examples: AWS EC2, Azure VM
+
+## Common Cloud Characteristics
+- Broad Network Access
+- On-demand Self-Service
+- Resource Pooling (multi-tenant)
+- Rapid Elasticity
+- Measured Service
+
+------------------------------------------------------------------------------------------------------------------------------
+## Managed Service Provider (MSP)
+
+- MSP = Company managing IT assets/functions for other businesses.
+- Commonly used by small and medium businesses lacking in-house expertise.
+- Services include:
+  - Day-to-day IT operations management
+  - Network and security monitoring
+  - Patch management and software updates
+  - Managed Detection and Response (MDR) services
+  - Help desk and payroll services
+  - Implementation and project support
+  - Full IT infrastructure management
+- Benefits:
+  - Access to expert skills
+  - Cost savings over full in-house teams
+  - Proactive security monitoring and incident response
+  - Allows businesses to focus on core activities
+--------------------------------------------------------------------------------------------------------------------------
+# Cloud Characteristics
+
+- **On-Demand Access:** Access resources anytime, anywhere via the internet.
+- **Rapid Elasticity:** Scale resources up or down quickly.
+- **Measured Service:** Pay based on actual usage.
+- **Reduced Cost:** No need to buy/maintain physical hardware.
+- **Energy Efficient:** Lowers energy and cooling costs ("green IT").
+- **Broad Network Access:** Accessible from multiple devices and locations.
+- **On-demand Self-Service:** Users provision resources without manual help.
+- **Resource Pooling:** Shared physical resources across multiple users securely.
+-------------------------------------------------------------------------------------------------------------------------------------
 
