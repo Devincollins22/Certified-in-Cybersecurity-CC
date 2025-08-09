@@ -75,17 +75,119 @@ It controls how individual entities can communicate, enforcing security at a fin
 
 _Ket Features_
 -  Granular Access Rules
-      - Control communication per device, user IP, port, time, or service      
+      - Control communication per device, user IP, port, time, or service
+      - Example: Allow server A to talk to Server B only during backups, using specific creditals
+- Breaks network into small, secure segments
+- Uses software rules (no extra hardware)
+- Controls traffic between individual devices, users, or apps
+- Can allow/deny by:
+       - IP address
+       - Time of day 
+       - Credentials
+       - Specific services
+- Stops lateral movements of threats
+-------------------------------------------------------------------------------------------------------------------------------------
+Intrusion Detection Systems(IDS):
 
+What is an IDS?
+- Monitors logs and real-time events to detect abnormal or spacious activity
+- Part of defense in depth, works with (not replaces) firewalls
+- Detects external attacks (ex> from internet) and internal spread (ex> worms.
+- Responds by sending alerts or alarms for timely response
+--------------------------------------------------------------------------------------------------------------------------------------
+IDS Types:
+1. Host-Based IDS (HIDS)
+      - Monitors one computer (process calls, system/app/security logys, firewall logs.)
+      - Detects file changes, processes used by attackers, remote contorl infections
+      - More detailed analysis than NIDS
+      - Higher cost- needs admin on each host
+      - Cannot detect network attacks on other systems
+2. Network-Based IDS (NIDS)
+      - Monitors network traffic patterns at key points (routes, firewalls, switches).
+      - Can detect attacks in progress but not if they succeeded
+      - Cannot inspect encrypted traffic content
+      - Centralized management via remote sensors
+      - Low performance impact
+---------------------------------------------------------------------------------------------------------------------------
+IDS vs IPS:
+IDS = Detects and alerts.
+IPS = Detects and blocks
+-------------------------------------------------------------------------------------------------------------------------
+SIEM (Security Information and Event Management):
 
+- Collects log data from many sources across the enterprise.
+- Helps identify threats and allocate security resources.
+- Works with IDS/NIDS/HIDS in defense-in-depth.
+----------------------------------------------------------------------------------------------------------------------------
+Network Segmentation: Demilitarized Zone (DMZ):
 
+What is a DMZ?
+- A seperate network segment that acts as a bufferzone between the public internet and an internal network
+- Hosts public-facing services  (e.g., web servers, email servers, DNS) while keeping the internal network isolated.
 
+Purpose: 
+- Reduce the risk of attackers reaching the internal network.
+- If a DMZ system is compromised, attackers don’t gain direct access to internal resources.
 
+How it Wortks:
+Firewalls control traffic:
 
+One firewall between internet ↔ DMZ
+Another firewall between DMZ ↔ internal network
+Only specific, necessary traffic is allowed.
+Example
+Allowed: Public access to a company website in the DMZ.
+Blocked: Direct internet access to internal databases.
+---------------------------------------------------------------------------------------------------------------------------------------
+Virtual Private Network (VPN):
+ What is a VPN?
+      - Point-to-point connection between two hosts.
+      - Not always encrypted — encryption only if security protocols are selected & configured.
+      - Creates a trusted path over an untrusted network (like the internet).
+--------------------------------------------------------------------------------------------------------------------------------------
+Virtual Local Area Network (VLAN) – Quick Notes
 
+What is a VLAN?
+      - Software-based LAN segment created using network switches.
+      - Groups devices logically, not by physical location.
+      - Devices in the same VLAN communicate as if on the same Layer 2 network.
 
+Key Features:
+Can be configured by:
+      - Switch port
+      - IP subnet
+      - MAC address
+      - Protocol
 
+- Limits broadcast traffic to the VLAN → reduces congestion & some attacks.
+- Easy to reconfigure when users move or need different services.
+- Inter-VLAN communication requires routing.
 
+Limitations:
+VLANs do not guarantee security.
+Vulnerable to VLAN hopping attacks (malicious user can intercept other VLAN traffic).
+Should be combined with other security measures.
+
+Benefits: 
+Segregates or consolidates traffic.
+Simplifies network administration.
+Improves performance and control.
+-----------------------------------------------------------------------------------------------------------------------------------
+Redundancy:
+
+What is Redundancy?
+      - Designing systems with duplicate components so if one fails, another takes over
+      - Ensures high availabiltiy and minimal downtime
+
+Examples in Data Centers:
+      - Multiple utility service entrances for communications/power.
+      - Two power supplies per device, connected to different sources.
+      - Backup batteries and generators.
+
+In high-availability setups:
+      - Redundant generators
+      - Different fuel types for extra resilience.
+---------------------------------------------------------------------------------------------------------------------------------=
 
 
 
