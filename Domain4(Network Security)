@@ -262,4 +262,19 @@ In high-availability setups:
 - **On-demand Self-Service:** Users provision resources without manual help.
 - **Resource Pooling:** Shared physical resources across multiple users securely.
 -------------------------------------------------------------------------------------------------------------------------------------
+# Service-Level Agreement (SLA) — Cloud Computing
+
+- SLA = Contract between cloud provider & customer defining service quality.
+- Includes measurable properties: uptime %, performance, security, data handling.
+- Protects both sides: sets expectations, responsibilities, and penalties for failure.
+
+## Key SLA Components:
+- Service availability & performance
+- Data ownership, location, portability, and destruction
+- Disaster recovery procedures
+- Security standards & compliance auditing
+- Problem resolution & change management
+- Exit strategy & cost details
+
+**Purpose:** Ensures transparency, accountability, and protection for the customer.
 
