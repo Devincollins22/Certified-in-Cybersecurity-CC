@@ -1,1 +1,38 @@
+# Domain 5: Security Operations — Introduction
 
+Security Operations focuses on the **daily activities** that keep an organization secure and resilient.  
+It involves **monitoring, incident response, disaster recovery, and ongoing maintenance** of security controls.
+
+## Key Goals
+- **Monitor & Detect** – Identify suspicious activity through logs, alerts, and monitoring tools.  
+- **Respond & Recover** – Contain threats, restore systems, and prevent repeat incidents.  
+- **Maintain Operations** – Ensure critical services keep running during disruptions.  
+- **Enforce Controls** – Apply least privilege, patch management, backups, and secure configurations.  
+- **Support Investigations** – Preserve evidence, follow chain of custody, conduct forensic analysis.
+
+## Why It Matters
+Security Operations ensures **policies are actively enforced** and threats are handled in real time,  
+minimizing business impact.
+------------------------------------------------------------------------------------------------------------
+## Data Handling
+
+Data goes through a **life cycle** as it is created, used, shared, stored, and eventually destroyed.  
+Understanding this cycle helps ensure security controls are applied at each stage.
+
+### Data Security Life Cycle Stages
+1. **Create** – Data is generated, often as tacit knowledge (ideas, raw information).  
+2. **Store** – Data is saved in a way that makes it explicit and retrievable.  
+3. **Use** – Data is accessed, processed, or modified.  
+4. **Share** – Data is transferred or made accessible to others.  
+5. **Archive** – Data is stored long-term when not actively needed.  
+6. **Destroy** – Data is securely erased or physically destroyed when no longer required.
+
+### Data States
+- **In Use** – Actively being processed by applications or viewed by users.  
+- **At Rest** – Stored on physical or cloud storage devices.  
+- **In Motion** – Transmitted across networks.
+
+### Why It Matters
+- Security policies must protect **all stages** and **all states** of data.  
+- Aligning life cycle management with roles ensures **accountability** and **compliance**.
+-------------------------------------------------------------------------------------------------------
