@@ -36,3 +36,245 @@ Understanding this cycle helps ensure security controls are applied at each stag
 - Security policies must protect **all stages** and **all states** of data.  
 - Aligning life cycle management with roles ensures **accountability** and **compliance**.
 -------------------------------------------------------------------------------------------------------
+## Encryption Overview
+
+Encryption is a core part of **cryptography**, protecting personal and business data in the modern digital world.  
+It ensures confidentiality, integrity, and authenticity for communications, software, and transaction
+
+### Key Concepts
+
+#### **Plaintext**
+- Data in its normal, unencrypted form.  
+- Can be:
+  - Images, audio, or video (raw or compressed)
+  - Human-readable text or numeric data (with/without formatting metadata)
+  - Database files/records or specific fields
+  - Any digital data ready for processing, storage, or transmission
+
+#### **Ciphertext**
+- Encrypted version of plaintext.
+- Unintelligible without the correct **key** and **decryption process**.
+
+#### **Encryption System**
+- Combination of **hardware**, **software**, **algorithms**, **keys**, and **procedures**.
+- Transforms plaintext → ciphertext and back using:
+  - **Encryption key** (locks data)
+  - **Decryption key** (unlocks data)
+  - **Cryptovariables** (parameters influencing encryption)
+  - **Algorithm** (mathematical method used)
+
+---
+-----------------------------------------------------------------------------------------------------------------
+### Security Services Provided by Cryptography
+
+1. **Confidentiality**
+   - Hides message content from unauthorized users.
+   - Only the intended recipient can read it.
+
+2. **Integrity**
+   - Ensures data has not been altered.
+   - Uses **hash functions** and **digital signatures**.
+   - Any modification produces a different hash result.
+
+3. **Authenticity** (via digital signatures)
+   - Verifies the sender’s identity.
+   - Prevents sender from denying authorship (**non-repudiation**).
+
+---
+
+### Process Overview
+```plaintext
+Plaintext → [Encryption + Key + Algorithm] → Ciphertext → [Decryption + Key + Algorithm] → Plaintext
+---------------------------------------------------------------------------------------------------------------------------
+# Security Awareness Training
+
+## Purpose
+Ensure everyone in the organization understands:
+- Their security responsibilities
+- How to identify risky behaviors
+- The importance of following security protocols
+
+## Three Learning Activities
+
+### 1. Education
+- Expands understanding of concepts
+- Helps relate knowledge to real experiences
+- Example: Learning how phishing works
+
+### 2. Training
+- Builds skills for specific security actions
+- Teaches when and how to apply skills
+- Example: Practicing how to spot and report phishing emails
+
+### 3. Awareness
+- Attracts attention to risks or needs
+- Often the first step before education and training
+- Example: Security posters reminding staff about password safety
+
+## Key Flow
+Awareness → Education → Training
+
+-----------------------------------------------------------------------------------------------------------------
+# Data Security – Event Example
+
+## Overview
+This example illustrates a **data security event** using a raw log.  
+Such logs are useful to determine if someone attempted to:
+- Access a secure file
+- Hijack a server
+
+Security engineers often analyze these logs to:
+- Identify the source of login attempts
+- Determine if secure or questionable ports were targeted
+- Detect potential penetration attempts
+
+---
+
+## Key Points
+
+### 1. Raw Logs
+- Provide low-level details of system events.
+- Help trace:
+  - Who attempted to log in
+  - Which ports were accessed
+  - Whether access was legitimate or suspicious
+
+### 2. Importance of Secure Systems
+- Security is **not** something that can simply be “plugged in” as needed.
+- While patches and updates improve existing systems, **security must be planned from the start**.
+
+### 3. Proactive Security Planning
+- Security measures should be implemented **before** data is introduced into the network.
+- Building security into the design phase ensures stronger protection.
+
+---
+
+## Takeaways
+- **Early Planning:** Integrate security at the initial stages of system design.
+- **Continuous Monitoring:** Use raw logs and modern monitoring tools to detect intrusions.
+- **Port Analysis:** Knowing which ports are accessed is critical in determining threat level.
+---------------------------------------------------------------------------------------------------------------------
+# Common Security Policies – Notes
+
+## Overview
+Security policies define the rules, expectations, and procedures for protecting an organization’s assets.  
+They align with the **organization’s vision, mission, and needs** and form part of its **baseline security posture**.
+
+---
+
+## Enforcement & Consequences
+- Policies should **include penalties** for noncompliance.
+- Example escalation process:
+  1. **First violation** → Verbal/written warning  
+  2. **Second violation** → Suspension or forced leave without pay  
+  3. **Critical violation** → Termination of employment
+- Consequences ensure that policies are **taken seriously** and **enforced consistently**.
+
+---
+
+## Communication & Training
+- Policies must be **clearly explained during onboarding**, especially for **information security personnel**.
+- Assign a **responsible party** for enforcement (e.g., Security Officer, HR, IT Manager).
+- Employees should:
+  - **Acknowledge** policies with a signed statement.
+  - **Demonstrate understanding** through:
+    - Quizzes
+    - Surveys
+    - Written confirmations
+
+---
+
+## Documentation & Accountability
+- Signed acknowledgments serve as **proof of policy awareness**.
+- Documentation should be stored securely for **audit and compliance purposes**.
+
+---
+
+## Policy Integration
+- All **security** and **data handling** procedures should be:
+  - Backed by official policies.
+  - Consistent with organizational standards.
+- Helps maintain **uniformity** and **accountability** across departments.
+
+---
+**Key Takeaway:**  
+> A security policy without enforcement is just a suggestion. Clear rules, documented acknowledgment, and consistent penalties are essential for a strong security posture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Phishing
+
+Phishing is a major security threat where attackers attempt to trick individuals into revealing sensitive information or performing actions that compromise security.
+
+## Key Points
+- **Scope**: Targets individuals, entire departments, or entire companies.
+- **Common Delivery Methods**:
+  - Emails
+  - Phone calls
+  - Spam
+  - Instant messages
+  - Videos
+  - File attachments
+  - Other digital communication channels
+
+## Variations
+- **Whaling**:  
+  - A phishing attack targeting highly placed officials or wealthy individuals.  
+  - Goal: Trick them into authorizing large fund wire transfers to unknown entities.
+
+## Security Professional's Role
+- Be aware of the threat.
+- Prepare to defend against phishing in all its forms.
+- Recognize that phishing attacks are relentless and evolving.
+---------------------------------------------------------------------------------------------------------------------------------
+# Hashing
+
+## Overview
+Hashing uses a **hash function** (algorithm) to transform data into an **alphanumeric digest**.  
+This digest:
+- Appears meaningless to humans.
+- Has a **fixed length**, regardless of input size.
+- Changes **completely** if even a single character in the input changes.
+
+---
+
+## Key Properties
+- **Fixed-Length Output**: The digest always has the same number of characters, no matter the input size.
+- **Sensitivity to Change**: Any minor change in the input (typo, case change, added space) results in a completely different digest.
+- **Verification Tool**: Used to confirm that the input data matches what is expected (e.g., password integrity checks).
+
+---
+
+## Example Scenario
+- You pay **$5,000/month rent** via automatic withdrawal.
+- If someone tries to change it to **$50,000**, the hash digest will **not match** the original.
+- This mismatch signals **data tampering** and stops the transaction.
+
+---
+
+## Security Role
+- **Extra Defense Layer**: Detects if data has been altered, intentionally or accidentally.
+- **Incident Investigation**: Compare original and new hashes to locate where changes occurred.
+- **Automation**: Software tools can detect mismatches quickly, but in complex cases, manual review may be needed.
+
+---
+
+## Real-World Incident
+- **University of Florida Case**:  
+  - Distributed Windows 2000/Millennium CDs to 50,000 students.
+  - Hash digests revealed the distributed files were compromised.
+  - Mismatch detection prevented further damage.
+
+---
+
+## Common Uses
+- Password verification
+- File integrity checks
+- Software distribution security
+- Digital signatures
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+
