@@ -273,7 +273,98 @@ This digest:
 - Digital signatures
 
 
---------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------- 
+## Logging and Monitoring Security Events
+
+---
+
+## 1. Purpose of Logging & Monitoring
+- **Goal**: Track system health, detect compromises, maintain accountability.
+- Helps **identify**:
+  - Inefficient or malfunctioning systems
+  - Security incidents
+  - Policy violations
+  - Fraudulent activities
+  - Operational issues
+
+---
+
+## 2. What is an Event?
+- **Event** = Any action in the system environment that changes one or more system elements/resources.
+- Examples:  
+  - Logon / Logoff  
+  - File access  
+  - Configuration change  
+
+---
+
+## 3. Why Logging Matters
+- **Accountability**: Provides evidence of actions.
+- **Security**: Supports audits, forensic investigations, and vulnerability exploitation checks.
+- **Correlation**: Connects activity across diverse systems.
+- **Compliance**: Required by laws, regulations, and corporate governance.
+
+---
+
+## 4. Information to Log
+- **User IDs**  
+- **System activities**  
+- **Date/time stamps** of key events  
+- **Device & location identity**  
+- **Successful & failed access attempts**  
+- **System configuration changes**  
+- **Activation/deactivation of system protections**
+
+---
+
+## 5. Best Practices for Logging
+- **Design** a proper logging environment.
+- **Review logs regularly** – close to the time of events.
+- **Protect log integrity**:
+  - Prevent unauthorized changes
+  - Preserve original logs (attackers try to delete them)
+  - Maintain confidentiality of log data
+- **Retention**: Follow legal/regulatory/corporate policies.
+- **Monitor log storage**: Avoid exceeding capacity.
+- **Centralized log management**:
+  - Components interact securely
+  - Standardized formats and time synchronization
+
+---
+
+## 6. Common Log Problems
+- Alteration of log messages
+- Log file deletion or editing
+- Storage capacity exceeded
+- Lack of retention policy enforcement
+
+---
+
+## 7. Key Exam Points
+- **Logging = Evidence**
+- **Monitoring = Detection**
+- Retain original logs for forensic integrity
+- Correlating logs across systems is critical
+- Protect log data from both **modification** and **unauthorized viewing**
+- Log review supports audits, investigations, and baseline security
+
+---
+----------------------------------------------------------------------------------------------------------------------------------------
+Brief Notes on Domian 1-3 after
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
