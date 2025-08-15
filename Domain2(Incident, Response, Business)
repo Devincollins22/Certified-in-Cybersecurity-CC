@@ -1,1 +1,172 @@
-## Be back
+# Domain 2 – Incident Response, Business Continuity & Disaster Recovery Concepts (ISC² Certified in Cybersecurity)
+
+---
+
+## 0. Overview
+**Domain Weight:** ~20% of CC Exam (estimated)  
+**Study Time:** ~0.75 – 1.25 hours (adaptive pacing)
+
+**Focus:** Availability (CIA triad) — maintaining operations through disruptions by using:
+- **Incident Response (IR)**
+- **Business Continuity (BC)**
+- **Disaster Recovery (DR)**
+
+**Key Difference:**
+- **IR:** Respond to incidents and contain damage.
+- **BC:** Keep business running during crisis.
+- **DR:** Restore operations to normal after major failure.
+
+---
+
+## 1. Why This Domain Matters
+Cybersecurity is not only about preventing breaches — it’s about ensuring **human safety** and the **continuous operation of systems and services**, even when unexpected events occur.  
+This includes:
+- Protecting people’s personal information
+- Preserving the health and safety of staff and customers
+- Maintaining critical business functions
+
+---
+
+## 2. Incident Response (IR)
+
+### 2.1 Definition
+A structured approach for handling and managing the aftermath of a security incident or breach.
+
+### 2.2 Goals
+- Limit damage
+- Reduce recovery time and costs
+- Maintain business operations
+- Preserve evidence for investigation
+
+### 2.3 Incident Response Life Cycle (NIST Model)
+1. **Preparation**
+   - Create IR policies and procedures
+   - Train the IR team
+   - Ensure logging and monitoring are in place
+2. **Detection & Analysis**
+   - Identify indicators of compromise (IoCs)
+   - Classify and prioritize incidents
+3. **Containment**
+   - Short-term: Limit immediate damage
+   - Long-term: Prevent recurrence
+4. **Eradication**
+   - Remove root cause (malware, vulnerabilities)
+5. **Recovery**
+   - Restore systems to normal operation
+   - Monitor for signs of weakness or reinfection
+6. **Lessons Learned**
+   - Conduct post-incident review
+   - Update policies, training, and defenses
+
+---
+
+## 3. Business Continuity (BC)
+
+### 3.1 Definition
+The ability of an organization to maintain **essential functions** during and after a disaster, without significant interruption.
+
+### 3.2 Goals
+- Continue **critical business processes** despite disruptions
+- Minimize operational downtime
+- Protect brand reputation
+
+### 3.3 Business Continuity Plan (BCP) Components
+- **Business Impact Analysis (BIA):**
+  - Identifies critical business functions
+  - Determines Recovery Time Objective (RTO) & Recovery Point Objective (RPO)
+- **Continuity Strategies:**
+  - Alternate work sites
+  - Remote work capability
+  - Redundant systems and network connections
+- **Plan Documentation:**
+  - Clear roles and responsibilities
+  - Communication plans
+  - Escalation procedures
+- **Testing & Training:**
+  - Tabletop exercises
+  - Simulated outages
+
+---
+
+## 4. Disaster Recovery (DR)
+
+### 4.1 Definition
+Focused on **IT systems and infrastructure restoration** after a major incident or disaster.
+
+### 4.2 Goals
+- Restore systems and data to normal operations quickly
+- Minimize data loss and downtime
+
+### 4.3 DR Plan Components
+- **Backup Solutions:**
+  - Full, incremental, and differential backups
+  - Cloud-based replication
+- **Recovery Sites:**
+  - **Hot site:** Fully equipped, ready to run immediately
+  - **Warm site:** Partially equipped, requires some setup
+  - **Cold site:** Space available, no pre-installed systems
+- **Restoration Procedures:**
+  - Prioritized system recovery order
+  - Verification of restored data
+- **Plan Testing:**
+  - DR drills and failover testing
+
+---
+
+## 5. How IR, BC, and DR Work Together
+| Plan | Trigger | Focus | Outcome |
+|------|---------|-------|---------|
+| **Incident Response** | Security incident detected | Containment & mitigation | Business continues without major interruption |
+| **Business Continuity** | Crisis or disruption impacting normal operations | Keep essential functions running | Maintain minimal acceptable service levels |
+| **Disaster Recovery** | BC efforts fail or large-scale disaster occurs | Restore IT systems and data | Full operational recovery |
+
+---
+
+## 6. Key Recovery & Continuity Concepts
+
+### 6.1 Recovery Time Objective (RTO)
+- Maximum acceptable **downtime** before operations are severely impacted.
+
+### 6.2 Recovery Point Objective (RPO)
+- Maximum acceptable **data loss**, measured in time.
+
+### 6.3 Maximum Tolerable Downtime (MTD)
+- Longest time business can tolerate a disruption before unacceptable impact.
+
+---
+
+## 7. Human & Safety Considerations
+- **First priority:** Protect lives before assets.
+- Ensure **evacuation plans** are in place.
+- Communicate clearly with employees, customers, and partners.
+
+---
+
+## 8. Exam Tips & Common Pitfalls
+
+- **IR ≠ BC ≠ DR** — Know the differences and how they interact.
+- IR is **reactive**, BC is **proactive**, DR is **restorative**.
+- Understand **RTO vs RPO**:
+  - RTO = “How fast can we be up?”
+  - RPO = “How much data can we lose?”
+- For recovery sites:
+  - Hot site = fastest, most expensive
+  - Cold site = slowest, cheapest
+- Always test and update plans regularly.
+
+---
+
+## 9. Quick Reference Table
+| Term | Definition |
+|------|------------|
+| IR | Respond to incidents quickly to reduce damage |
+| BC | Continue critical business functions during crisis |
+| DR | Restore IT systems after major outage |
+| RTO | Max downtime before operations are severely affected |
+| RPO | Max data loss acceptable |
+| MTD | Longest disruption tolerated |
+| Hot Site | Fully operational alternate site |
+| Warm Site | Partially equipped alternate site |
+| Cold Site | Facility with no ready equipment |
+
+---
