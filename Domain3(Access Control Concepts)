@@ -1,1 +1,166 @@
-## Will get done
+# Domain 3 – Access Control Concepts (ISC² Certified in Cybersecurity)
+
+---
+
+## 0. Overview
+**Domain Weight:** ~20% of CC Exam (estimated)  
+**Study Time:** ~0.75 – 1.5 hours (adaptive pacing)
+
+**Focus:**  
+- Who gets access  
+- What they have access to  
+- Why access is necessary  
+- How that access is managed  
+- Both **physical** and **logical** controls
+
+**Key Topics:**
+- Security Control Protocols
+- Access Control Strategies
+- User Privilege Administration
+
+---
+
+## 1. Purpose of Access Control
+**Definition:** The selective restriction of access to resources, ensuring only authorized users, programs, or processes can access certain assets.
+
+**Goals:**
+1. Enforce the principle of least privilege (users only get access needed for their role).
+2. Protect confidentiality, integrity, and availability (CIA).
+3. Reduce risk of insider threats and unauthorized access.
+
+---
+
+## 2. Categories of Access Controls
+
+### 2.1 Physical Access Controls
+Prevent or deter unauthorized physical access to facilities, equipment, and resources.
+
+**Examples:**
+- Locks (mechanical, electronic)
+- ID badges and access cards
+- Biometric scanners (fingerprint, retina)
+- Security guards
+- CCTV and surveillance systems
+- Barriers, gates, and fencing
+- Mantraps and turnstiles
+
+---
+
+### 2.2 Logical (Technical) Access Controls
+Restrict access to computer systems, networks, and data through software or hardware mechanisms.
+
+**Examples:**
+- Passwords and passphrases
+- Multi-factor authentication (MFA)
+- Role-Based Access Control (RBAC)
+- Encryption
+- Firewalls and intrusion prevention systems
+- Single Sign-On (SSO)
+- Directory services (e.g., LDAP, Active Directory)
+
+---
+
+## 3. Access Control Strategies
+
+### 3.1 Discretionary Access Control (DAC)
+- Resource owner decides who can access.
+- Flexible but more prone to mismanagement.
+- Example: File owner grants read/write permissions.
+
+### 3.2 Mandatory Access Control (MAC)
+- Central authority enforces access rules.
+- Based on security classifications (e.g., Top Secret).
+- Example: Military or government environments.
+
+### 3.3 Role-Based Access Control (RBAC)
+- Access granted based on job roles.
+- Easier to manage in large organizations.
+- Example: “Finance” role grants access to accounting systems.
+
+### 3.4 Attribute-Based Access Control (ABAC)
+- Access based on attributes (user, resource, environment).
+- More dynamic and flexible.
+- Example: User can only access data during business hours, from company devices.
+
+---
+
+## 4. User Privilege Administration
+
+### 4.1 Key Principles
+- **Least Privilege:** Only the minimum rights needed.
+- **Need-to-Know:** Only access to information relevant to job duties.
+- **Separation of Duties (SoD):** Split tasks between individuals to prevent fraud.
+- **Privilege Creep:** Users accumulating access over time without need — must be avoided.
+
+### 4.2 Account Management
+- **Provisioning:** Creating user accounts with appropriate permissions.
+- **De-provisioning:** Disabling/removing accounts when users leave or change roles.
+- **Periodic Review:** Regularly checking permissions for accuracy.
+
+---
+
+## 5. Security Control Protocols
+These protocols help enforce logical access control:
+
+- **Authentication Protocols:**
+  - Kerberos
+  - RADIUS / TACACS+
+  - SAML / OAuth / OpenID Connect
+
+- **Authorization Protocols:**
+  - Implement RBAC, ABAC, or MAC rules.
+  - Enforce policies via policy decision points (PDP) and policy enforcement points (PEP).
+
+- **Accounting/Auditing:**
+  - Log user activity for accountability and forensic purposes.
+  - Example: Tracking login attempts, resource access, and changes to critical files.
+
+---
+
+## 6. Exam Tips & Key Distinctions
+
+| Concept | Key Point |
+|---------|-----------|
+| Physical vs Logical | Physical = tangible barriers, Logical = digital/system controls |
+| DAC | Owner controls access |
+| MAC | Central authority controls access |
+| RBAC | Based on job role |
+| ABAC | Based on attributes & conditions |
+| Least Privilege | Minimum rights needed |
+| SoD | Split tasks to reduce fraud risk |
+| Privilege Creep | Avoid stale or unused permissions |
+
+---
+
+## 7. Common Threats to Access Control
+- Weak or shared passwords
+- Stolen access cards or tokens
+- Social engineering attacks
+- Poor account management
+- Lack of regular access reviews
+- Exploitation of unpatched systems
+
+---
+
+## 8. Best Practices
+1. Implement MFA for sensitive systems.
+2. Use strong, unique passwords with regular changes.
+3. Automate account provisioning/de-provisioning.
+4. Review access rights quarterly.
+5. Apply encryption to sensitive data.
+6. Train users on secure authentication practices.
+
+---
+
+## 9. Quick Reference Table
+
+| Access Control Type | Example |
+|---------------------|---------|
+| Physical | Locks, guards, CCTV |
+| Logical | Passwords, MFA, encryption |
+| DAC | File owner sets permissions |
+| MAC | Government clearance levels |
+| RBAC | “HR role” grants payroll access |
+| ABAC | Location-based or time-based restrictions |
+
+---
